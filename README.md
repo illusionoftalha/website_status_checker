@@ -74,3 +74,14 @@ website_status_checker/
 ## License
 
 © 2026 Sheikh Muhammad Talha Bin Khalid. All Rights Reserved.
+
+## Network behavior and tests
+
+Checks reuse an HTTP session, with a 5-second connection timeout and a
+15-second read inactivity timeout. Ctrl+C closes the session cleanly.
+
+Run tests without network requests:
+
+```bash
+python -m unittest discover -s tests -v
+```
